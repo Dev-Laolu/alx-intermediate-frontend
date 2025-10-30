@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hopewell Olayinka">
+    <title>Image Gallery</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="overflow-hidden rounded h-48 sm:h-56 md:h-64">
+                <img src="./public/1.jpg" alt="Image 1" class="w-full h-full object-cover" />
+            </div>
+            <div class="overflow-hidden rounded h-48 sm:h-56 md:h-64">
+                <img src="./public/2.jpg" alt="Image 2" class="w-full h-full object-cover" />
+            </div>
+            <div class="overflow-hidden rounded h-48 sm:h-56 md:h-64">
+                <img src="./public/3.jpg" alt="Image 3" class="w-full h-full object-cover" />
+            </div>
+        </div>
+    </main>
+</body>
+</html>
